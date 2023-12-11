@@ -3,7 +3,14 @@
 
 header {
   height: 900px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bg.png);  background-size: cover;
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.03) 2.5%,
+      rgba(27, 30, 34, 0.4) 42.42%,
+      #1b1e22 80.67%
+    ),
+    url(../img/bg.png);
+  background-size: cover;
   background-repeat: no-repeat;
   .header__navigation {
     padding-top: 5vh;
@@ -28,7 +35,6 @@ header {
           .item-en {
             a {
               color: $gray;
-              color: aqua;
             }
           }
           .item-ru {
@@ -195,56 +201,91 @@ header {
             }
           }
           .item1 {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-            url("../img/Rectangle1.png");
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+              ),
+              url("../img/Rectangle1.png");
           }
           .item2 {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-            url("../img/Rectangle2.png");
-                }
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+              ),
+              url("../img/Rectangle2.png");
+          }
           .item3 {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-            url("../img/Rectangle3.png");
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+              ),
+              url("../img/Rectangle3.png");
           }
           .item4 {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-            url("../img/Rectangle4.png");
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+              ),
+              url("../img/Rectangle4.png");
           }
           .item5 {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-            url("../img/Rectangle5.jpeg");
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+              ),
+              url("../img/Rectangle5.jpeg");
           }
           .item6 {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-            url("../img/Rectangle6.png");
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+              ),
+              url("../img/Rectangle6.png");
           }
           &:hover {
             background-color: #ded7d77a;
             .item1 {
-              background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
-              url("../img/Rectangle1.png");
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.1),
+                  rgba(0, 0, 0, 0.5)
+                ),
+                url("../img/Rectangle1.png");
             }
             .item2 {
-              background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
-              url("../img/Rectangle2.png");
-                  }
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.1),
+                  rgba(0, 0, 0, 0.5)
+                ),
+                url("../img/Rectangle2.png");
+            }
             .item3 {
-              background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
-              url("../img/Rectangle3.png");
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.1),
+                  rgba(0, 0, 0, 0.5)
+                ),
+                url("../img/Rectangle3.png");
             }
             .item4 {
-              background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
-              url("../img/Rectangle4.png");
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.1),
+                  rgba(0, 0, 0, 0.5)
+                ),
+                url("../img/Rectangle4.png");
             }
             .item5 {
-              background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
-              url("../img/Rectangle5.jpeg");
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.1),
+                  rgba(0, 0, 0, 0.5)
+                ),
+                url("../img/Rectangle5.jpeg");
             }
             .item6 {
-              background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
-              url("../img/Rectangle6.png");
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.1),
+                  rgba(0, 0, 0, 0.5)
+                ),
+                url("../img/Rectangle6.png");
             }
-  
           }
         }
       }
@@ -283,7 +324,7 @@ header {
         line-height: 24px;
         color: $white;
         &:hover {
-          background: #71717131;
+          background: $yellow;
         }
       }
     }
@@ -333,15 +374,26 @@ header {
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
-      // height: 510px;
       .our-blog-content-item-1 {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
-        url("../img/blog1.png");
-  background-position: center;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("../img/blog1.png");
+        background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         flex-basis: 48%;
-        // height: 510px;
+        border-radius: 4px;
+        transition: 0.5s;
+        &:hover {
+          background-image: linear-gradient(
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)
+          ),
+          url("../img/blog1.png");
+
+        }
         h3 {
           font-size: 34px;
           font-weight: 500;
@@ -363,15 +415,48 @@ header {
       .our-blog-content-item-2,
       .our-blog-content-item-3 {
         flex-basis: 23%;
-        height: 100%;
         display: flex;
         flex-direction: column;
+        .our-blog-content-item-img-container {
+          height: 225px;
+        }
+        .img-container1 {
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0.5),
+              rgba(0, 0, 0, 0.5)
+            ),
+            url("../img/blog2.png");
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          border-radius: 4px 4px 0 0;
+          transition: 0.5s;
+
+        }
+        .img-container2 {
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0.5),
+              rgba(0, 0, 0, 0.5)
+            ),
+            url("../img/blog3.png");
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          border-radius: 4px 4px 0 0;
+          transition: 0.5s;
+
+        }
+
         .content-item-wrapper {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           padding: 20px;
           background-color: $black-item;
+          height: 268px;
+          border-radius: 0 0 4px 4px;
+          transition: 0.5s;
+
           h4 {
             margin-bottom: 14px;
             font-size: 20px;
@@ -386,7 +471,7 @@ header {
             color: $white;
           }
           .our-blog-content-item-footer {
-            margin-top: 45px;
+            margin-top: 25px;
             @extend %displ-flex-space-between;
             .our-blog-content-item-footer-date {
               color: rgba(255, 255, 255, 0.5);
@@ -412,6 +497,26 @@ header {
             }
           }
         }
+        &:hover {
+          .content-item-wrapper {
+            background-color: #ded7d77a;  
+          }
+          .img-container1 {
+            background-image: linear-gradient(
+              rgba(0, 0, 0, 0.1),
+              rgba(0, 0, 0, 0.1)
+            ),
+            url("../img/blog2.png");
+          }
+          .img-container2 {
+            background-image: linear-gradient(
+              rgba(0, 0, 0, 0.1),
+              rgba(0, 0, 0, 0.1)
+            ),
+            url("../img/blog3.png");
+          }
+
+        }
       }
     }
     .main__our-blog-view-all {
@@ -427,6 +532,9 @@ header {
       transition: 0.5s;
       background: transparent;
       color: $white;
+      &:hover {
+        background-color: $yellow;
+      }
     }
   }
   .main__customer-reviews {
@@ -447,7 +555,7 @@ header {
       p {
         position: relative;
         z-index: 3;
-        color: #fff;
+        color: $white;
         text-align: center;
         font-size: 24px;
         font-weight: 400;
