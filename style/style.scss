@@ -2,16 +2,8 @@
 @import "./vars";
 
 header {
-  height: 100vh;
-  background: url(../img/bg.png),
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.03) 2.5%,
-      rgba(27, 30, 34, 0.4) 42.42%,
-      #1b1e22 80.67%
-    );
-  background-position: center;
-  background-size: cover;
+  height: 900px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bg.png);  background-size: cover;
   background-repeat: no-repeat;
   .header__navigation {
     padding-top: 5vh;
@@ -36,6 +28,7 @@ header {
           .item-en {
             a {
               color: $gray;
+              color: aqua;
             }
           }
           .item-ru {
@@ -174,7 +167,7 @@ header {
         gap: 2vw;
         .main__directions-item {
           transition: 0.5s;
-          flex: 1 1 30%;
+          width: 362px;
           height: 433px;
           background-color: $black-item;
           border-radius: 4px;
@@ -183,8 +176,6 @@ header {
           justify-content: space-between;
           .directions__item-bg {
             background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
             height: 217px;
             display: flex;
             align-items: flex-end;
@@ -204,25 +195,56 @@ header {
             }
           }
           .item1 {
-            background-image: url("../img/Rectangle1.png");
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("../img/Rectangle1.png");
           }
           .item2 {
-            background-image: url("../img/Rectangle2.png");
-          }
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("../img/Rectangle2.png");
+                }
           .item3 {
-            background-image: url("../img/Rectangle3.png");
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("../img/Rectangle3.png");
           }
           .item4 {
-            background-image: url("../img/Rectangle4.png");
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("../img/Rectangle4.png");
           }
           .item5 {
-            background-image: url("../img/Rectangle5.jpeg");
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("../img/Rectangle5.jpeg");
           }
           .item6 {
-            background-image: url("../img/Rectangle6.png");
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("../img/Rectangle6.png");
           }
           &:hover {
             background-color: #ded7d77a;
+            .item1 {
+              background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+              url("../img/Rectangle1.png");
+            }
+            .item2 {
+              background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+              url("../img/Rectangle2.png");
+                  }
+            .item3 {
+              background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+              url("../img/Rectangle3.png");
+            }
+            .item4 {
+              background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+              url("../img/Rectangle4.png");
+            }
+            .item5 {
+              background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+              url("../img/Rectangle5.jpeg");
+            }
+            .item6 {
+              background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+              url("../img/Rectangle6.png");
+            }
+  
           }
         }
       }
@@ -313,8 +335,9 @@ header {
       justify-content: space-between;
       // height: 510px;
       .our-blog-content-item-1 {
-        background-image: url("../img/blog1.png");
-        background-position: center;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+        url("../img/blog1.png");
+  background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         flex-basis: 48%;
@@ -366,19 +389,22 @@ header {
             margin-top: 45px;
             @extend %displ-flex-space-between;
             .our-blog-content-item-footer-date {
-              color: rgba(255, 255, 255, 0.50);
+              color: rgba(255, 255, 255, 0.5);
+              font-size: 14px;
             }
             .our-blog-content-item-footer-comments-likes {
               @extend %displ-flex-space-between;
               width: 90px;
               .comments {
-                color: rgba(255, 255, 255, 0.50);
+                color: rgba(255, 255, 255, 0.5);
+                font-size: 14px;
                 img {
                   margin-right: 3px;
                 }
               }
               .likes {
-                color: rgba(255, 255, 255, 0.50);
+                color: rgba(255, 255, 255, 0.5);
+                font-size: 14px;
                 img {
                   margin-right: 3px;
                 }
@@ -421,6 +447,18 @@ header {
       p {
         position: relative;
         z-index: 3;
+        color: #fff;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+      }
+      .main__customer-reviews-content-city {
+        color: $yellow;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 16px;
+        margin-top: 6px;
       }
     }
     .main__customer-reviews-footer {
@@ -429,7 +467,7 @@ header {
     .main__customer-reviews-bg {
       position: absolute;
       z-index: 1;
-      bottom: 5vh;
+      bottom: 80px;
     }
   }
 }
@@ -437,6 +475,10 @@ footer {
   background-color: $black;
   .footer__wrapper {
     @extend %displ-flex-space-between;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1145px;
+    padding-top: 60px;
     .footer__wrapper-item {
       display: flex;
     }
@@ -446,6 +488,25 @@ footer {
     }
     .item-email {
       flex-wrap: wrap;
+    }
+    .item-color {
+      color: $yellow;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 16px;
+      margin-bottom: 20px;
+    }
+    .item-color-white {
+      color: $white;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 16px;
+      margin-left: 27px;
+      margin-bottom: 20px;
+    }
+    .footer__wrapper-item-social {
+      display: flex;
+      gap: 20px;
     }
   }
 }
