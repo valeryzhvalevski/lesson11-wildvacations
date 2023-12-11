@@ -392,7 +392,6 @@ header {
             rgba(0, 0, 0, 0.1)
           ),
           url("../img/blog1.png");
-
         }
         h3 {
           font-size: 34px;
@@ -431,7 +430,6 @@ header {
           background-repeat: no-repeat;
           border-radius: 4px 4px 0 0;
           transition: 0.5s;
-
         }
         .img-container2 {
           background-image: linear-gradient(
@@ -444,9 +442,7 @@ header {
           background-repeat: no-repeat;
           border-radius: 4px 4px 0 0;
           transition: 0.5s;
-
         }
-
         .content-item-wrapper {
           display: flex;
           flex-direction: column;
