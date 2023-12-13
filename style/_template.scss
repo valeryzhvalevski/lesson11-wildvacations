@@ -8,6 +8,9 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  button {
+    cursor: pointer;
+  }
   a {
     text-decoration: none;
   }
@@ -30,17 +33,49 @@ body {
     padding-left: 10px;
     color: white;
   }
+  .btn-primary {
+    --bs-btn-bg: hidden;
+    --bs-btn-border-color: #ffb800;
+    --bs-btn-hover-bg: #ffb800;
+    --bs-btn-hover-border-color: #ffb800;
+    @media screen and (max-width: 950px) {
+      margin-top: 49px;
+    }
+    @media screen and (max-width: 495px) {
+      width: 250px;
+      height: 200px;
+    }
+  }
+  .dark-bg {
+    background-color: #1b1e22;
+  }
+  .show {
+    border: 1px solid white;
+    border-radius: 4px;
+  }
   .header__wrapper {
     max-width: 1200px;
     margin: 0 auto;
+    @media screen and (max-width: 1250px) {
+      width: 85%;
+    }
   }
   .main__wrapper {
     max-width: 1200px;
     margin: 0 auto;
+    @media screen and (max-width: 1250px) {
+      width: 85%;
+    }
   }
   .footer__wrapper {
     max-width: 1200px;
     margin: 0 auto;
+    @media screen and (max-width: 1250px) {
+      width: 85%;
+    }
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+    }
   }
 }
 

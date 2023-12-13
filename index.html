@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="./style/style.css">
   <title>Document</title>
 </head>
@@ -49,12 +50,46 @@
             </li>
           </ul>
         </nav>
+        <div class="burger">
+          <div class="burger__item"></div>
+          <div class="burger__item"></div>
+          <div class="burger__item"></div>
+        </div>
       </div>
       <div class="header__main-screen">
         <div class="header__item-main-screen">
           <h1>Исследуйте мир
             вместе с нами</h1>
           <p>Брось себе вызов. Отправься в путешествия <br /> в дикие уголки природы.</p>
+        </div>
+        <div class="toogle">
+          <p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+              Продобрать тур
+            </button>
+          </p>
+          <div style="min-height: 120px;">
+            <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                <form>
+                  <input type="text" placeholder="Куда" class="form-input">
+                  <div class="form__div">
+                    <input type="text" placeholder="Когда" class="when">
+                    <select class="duration">
+                      <option hidden>Продолжительность</option>
+                      <option value="1">1 ночь</option>
+                      <option value="2">1 неделя</option>
+                      <option value="3">1 месяц</option>
+                    </select>
+                  </div>
+                  <select class="type">
+                    <option hidden>Тип тура</option>
+                    <option value="1">Семейный</option>
+                    <option value="2">Холостяцкий</option>
+                  </select>
+                </form>
+                <button>Найти</button>  
+            </div>
+          </div>
         </div>
         <div class="header__item-main-screen-form">
           <h3>Быстрый поиск тура</h3>
@@ -203,11 +238,49 @@
             <div class="container-item__number">23</div>
             <div class="container-item__text">Офиса в Беларуси</div>
           </div>
-
         </div>
       </div>
     </section>
     <div class="main__wrapper">
+<section class="main__our-blog-slider">
+  <h2 class="main__our-blog-heading">Наш блог</h2>
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/blog1.png" class="d-block w-100" alt="blog">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>10 мест на Земле, которые обязательно должен посетить каждый</h5>
+          <p>20 октября 2018</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/blog2.png" class="d-block w-100" alt="blog">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Как стать успешным тревел-блогером</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/blog3.png" class="d-block w-100" alt="blog">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Лайфхаки успешно- го путешествия по Норвегии</h5>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
       <section class="main__our-blog">
         <h2 class="main__our-blog-heading">Наш блог</h2>
         <div class="main__our-blog-content">
@@ -297,10 +370,53 @@
           <img src="./img/facebook-letter-logo.svg" alt="facebook">
         </div>
       </div>
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              E-mail
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <strong>wildvacation@gmail.com</strong>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              Адрес
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <strong>Немига 5а, офис 18, Минск</strong> 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              Телефоны
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <strong>+375 33 888-44-22, +375 33 888-44-23</strong> 
+            </div>
+          </div>
+        </div>
+        <div class="footer__wrapper-item-social social-mob">
+          <img src="./img/instagram.svg" alt="instagram">
+          <img src="./img/vk-social-network-logo.svg" alt="vk">
+          <img src="./img/twitter.svg" alt="x">
+          <img src="./img/facebook-letter-logo.svg" alt="facebook">
+        </div>
+      </div>
     </div>
   </footer>
-
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
 </html>
